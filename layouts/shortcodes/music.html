@@ -1,0 +1,28 @@
+<!--
+based on https://github.com/metowolf/MetingJS
+https://matnoble.me/posts/shortcodes-practice-tutorial-for-hugo/#music
+-->
+
+{{ if .IsNamedParams }}
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+  
+    <meting-js
+      id="{{ .Get "id" }}"
+      server="{{ .Get "server" }}"
+      type="{{ .Get "type" }}"
+      fixed="{{ if .Get "fixed" }}{{ .Get "fixed" }}{{ else }}false{{ end }}"
+      mini="{{ if .Get "mini" }}{{ .Get "mini" }}{{ else }}false{{ end }}"
+      autoplay="{{ if .Get "autoplay" }}{{ .Get "autoplay" }}{{ else }}false{{ end }}"
+      loop="{{ if .Get "loop" }}{{ .Get "loop" }}{{ else }}none{{ end }}"
+      theme="{{ if .Get "autoplay" }}{{ .Get "autoplay" }}{{ else }}#255579{{ end }}"
+      volume="{{ if .Get "volume" }}{{ .Get "volume" }}{{ else }}0.6{{ end }}"
+      prelosd="{{ if .Get "prelosd" }}{{ .Get "prelosd" }}{{ else }}auto{{ end }}"
+      mutex="{{ if .Get "mutex" }}{{ .Get "mutex" }}{{ else }}true{{ end }}"
+      list-folded="{{ if .Get "list-folded" }}{{ .Get "list-folded" }}{{ else }}true{{ end }}">
+    </meting-js>
+  
+{{ end }}
