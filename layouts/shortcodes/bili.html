@@ -1,0 +1,12 @@
+<!--
+https://github.com/xianmin/hugo-theme-jane/
+https://matnoble.me/posts/shortcodes-practice-tutorial-for-hugo/#b-站
+-->
+
+{{ if .IsNamedParams }}
+
+<div style="position: relative; width: 100%; padding-bottom: 70%; padding-top: 5px; height: 0; overflow: hidden;">
+  <iframe src="//player.bilibili.com/player.html?aid={{ .Get "aid" }}&cid={{ .Get "cid" }}&page=1" style="position: absolute; top: 0; left: 0; width: 100%; height: {{ if .Get "height" }}{{ .Get "height" }}{{ else }}100%{{ end }};" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+{{ end }}
