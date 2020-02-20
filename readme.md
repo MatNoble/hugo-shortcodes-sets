@@ -21,3 +21,5 @@ To use them, copy the HTML files into your-hugo-blog/layouts/shortcodes/ Create 
   - [wp](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/wp.html)
   - [year](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/year.html)
   - [youku](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/youku.html)
+  - [mark](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/mark.html)
+  - [abbr](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/abbr.html)
