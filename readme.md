@@ -23,3 +23,4 @@ To use them, copy the HTML files into your-hugo-blog/layouts/shortcodes/ Create 
   - [youku](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/youku.html)
   - [mark](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/mark.html)
   - [abbr](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/abbr.html)
+  - [imgcap](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/imgcap.html)

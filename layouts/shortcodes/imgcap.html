@@ -1,0 +1,13 @@
+<!--
+./layouts/shortcodes/imgcap.html
+https://matnoble.me/posts/shortcodes-practice-tutorial-for-hugo/#image-with-caption
+-->
+
+<span class="caption-wrapper">
+  <img class="caption" src="{{ .Get "src" }}"
+       title="{{ .Get "title" }}"
+       alt="{{ if .Get "alt" }}{{ .Get "alt" }}{{ else }}{{ .Get "title" }}{{ end }}"
+       width="{{ if .Get "width" }}{{ .Get "width" }}{{ else }}95%{{ end }}"
+       >
+  <span class="caption">◎ {{ .Get "title" }}</span>
+</span>
