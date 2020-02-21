@@ -24,3 +24,4 @@ To use them, copy the HTML files into your-hugo-blog/layouts/shortcodes/ Create 
   - [mark](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/mark.html)
   - [abbr](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/abbr.html)
   - [imgcap](https://github.com/MatNoble/hugo-shortcodes-sets/blob/master/layouts/shortcodes/imgcap.html)
+  - [hugo-encryptor](https://matnoble.me/posts/shortcodes-practice-tutorial-for-hugo/#%E6%96%87%E6%9C%AC%E5%8A%A0%E5%AF%86)
