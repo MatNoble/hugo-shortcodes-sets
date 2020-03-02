@@ -3,13 +3,15 @@ https://matnoble.me/posts/shortcodes-practice-tutorial-for-hugo/#好友链接-fr
 -->
 
 {{ if .IsNamedParams }}
-<p><a target="_blank" href={{ .Get "url" }} title={{ .Get "name" }} class="friendurl"></p> 
-	<div class="frienddiv">
+<p><a target="_blank" href={{ .Get "url" }} title={{ .Get "name" }} class="friendurl">
+    <div class="frienddiv">
       <div class="frienddivleft">
-        <img class="myfriend" src={{ .Get "logo" }} />
+	<img class="myfriend" src={{ .Get "logo" }} />
       </div>
       <div class="frienddivright">
-        {{ .Get "name" }}<br />{{ .Get "word" }}
+	{{ .Get "name" }}<br />{{ .Get "word" }}
       </div>
     </div>
+  </a>
+</p>
 {{ end }}
